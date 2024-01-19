@@ -1,10 +1,10 @@
 Running
 ---
 ```
-python get_stats.py [--outfile outfile.csv] [--kind [summaries|full]] --cookie 'your cookie here in single quotes'
+python get_stats.py [--outfile outfile.csv] [--kind [summaries|full]] --start YYYY-MM-DD --end YYYY-MM-DD --cookie 'your cookie here in single quotes'
 ```
 
-Default value for `--outfile` is `data.csv`, default value for `--kind` is `summaries`.
+Default value for `--outfile` is `data.csv`, default value for `--kind` is `summaries`. `start` is inclusive, `end` is exclusive.
 
 To get your cookie value (this will be a long string), here is one strategy: 
 1. Log in to NYT Crosswords via a website
