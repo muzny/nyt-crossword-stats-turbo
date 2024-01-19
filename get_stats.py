@@ -90,7 +90,6 @@ def get_solve_info(results: list, cookie: str, summaries: bool = True) -> list:
     
         id = id_res['puzzle_id']
         r = requests.get(GAME_SOLVE_ENDPOINT + str(id) + ".json", headers = headers)
-        
         print(r.url)
         print(id_res["print_date"])
         board = r.json()['board']['cells']
